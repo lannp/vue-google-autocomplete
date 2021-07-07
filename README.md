@@ -86,8 +86,8 @@ Default: `Start typing`
 The input field will get this placeholder text.
 
 #### types
-Type: `String`
-Default: `address`
+Type: `Array`
+Default: `['address']`
 
 Types supported in place autocomplete requests. [More info](https://developers.google.com/places/supported_types#table3)
 
@@ -251,7 +251,7 @@ The example below shows the correct usage of the `types` parameter, when limitin
     classname="form-control"
     placeholder="Start typing"
     v-on:placechanged="getToData"
-    types="(cities)"
+    types="[(cities)]"
     country="us"
 >
 </vue-google-autocomplete>
